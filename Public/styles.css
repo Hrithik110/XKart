@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: gray;
+}
+.brandName{
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    color: beige;
+}
+.navLinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLinks li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: beige;
+    padding: 1rem;
+    display: block;
+}
+
+.navLinks li:hover{
+    background-color: burlywood;
+}
+
+.Search input{
+    height: 2rem;
+    text-align: left;
+    width: 15rem;
+    padding: 1rem;
+    color: black;
+    border-radius: 10px;
+    border: none;
+}
+.banner{
+   display: flex;
+}
+.banner img{
+    width: 100%;
+}
+
+.footer{
+    background-color: gray;
+    display: flex;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: beige;
+
+}
+
+.footer h1{
+    margin-bottom: 0;
+}
+.cards{
+    display: grid;
+    margin: 3rem;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid beige;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.CartButton{
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #fff;
+}
+.card img{
+    object-fit: contain;
+    height: 10rem;
+    width: 100%;
+}
+@media (max-width:768px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        background-color: gray;
+    }
+
+    .Search input{
+        height: 2rem;
+        text-align: center;
+        width: 12rem;
+        color: beige;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .navLinks ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cards{
+        display: grid;
+        margin: 3rem;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
