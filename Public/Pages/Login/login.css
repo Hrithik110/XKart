@@ -46,38 +46,72 @@ body{
     background-color: burlywood;
 }
 
-.Search input{
-    height: 2rem;
-    text-align: left;
-    width: 15rem;
+.form-container {
     padding: 1rem;
-    color: black;
-    border-radius: 10px;
-    border: none;
-}
-.banner{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color: aliceblue;
-}
-.banner img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
     object-fit: contain;
-    width: 80%;
-    height: 20rem;
-    margin: 3rem;
+    padding: 5rem;
 }
-.text{
-    padding: 3rem;
-    background-color: #fff;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    padding: 5rem;
+    border-radius: 12px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+label {
+    width: 100px; 
+    text-align: right;
+    margin-right: 1rem;
+}
+
+input {
+    flex-grow: 1; 
+    padding: 0.5rem;
+    max-width: 300px; 
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    width: 8rem;
+    height: 2rem;
+    color: aliceblue;
+    background-color: rgb(142, 142, 26);
     margin: 1rem;
+    cursor: pointer;
 }
-.text p{
-    text-decoration: line-through;
-    color: blue;
+
+.footer {
+    background-color: gray;
+    display: flex;
+    padding-bottom: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: beige;
 }
+
+.footer h1 {
+    margin-bottom: 0;
+}
+
 .footer{
     background-color: gray;
     display: flex;
@@ -93,56 +127,7 @@ body{
 .footer h1{
     margin-bottom: 0;
 }
-.cards{
-    display: grid;
-    margin: 3rem;
-    grid-template-columns: repeat(4, 25%);
-}
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid beige;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.CartButton{
-    background-color: green;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-    color: #fff;
-}
-.card img{
-    object-fit: contain;
-    height: 10rem;
-    width: 100%;
-}
-
-.loadMoreButton{
-    background-color: brown;
-    border-radius: 10px;
-    width: 10rem;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-    height: 3rem;
-    color: #fff;
-}
-
-.buttonContainer{
-    display:flex;
-    justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    margin-top: 1rem;
-}
 @media (max-width:768px) {
     .navBar{
         display: flex;
@@ -167,11 +152,5 @@ body{
         padding: 0;
         display: flex;
         justify-content: space-between;
-    }
-    
-    .cards{
-        display: grid;
-        margin: 3rem;
-        grid-template-columns: repeat(2, 50%);
     }
 }
